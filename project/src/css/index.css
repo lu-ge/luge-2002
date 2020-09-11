@@ -1,0 +1,377 @@
+body,h1,h2,h3,h4,h5,h6,p,ul,ol,dl,dd,hr,ul,ol,td,input,option,textarea{
+	margin:0;
+	padding:0;
+}
+body{
+	font-family: "微软雅黑";
+}
+li{
+	list-style: none;
+}
+a{
+	text-decoration: none;
+}
+img{
+	border: none;
+}
+html,body{
+	height: 100%;
+}
+body{
+	display: flex;
+	flex-direction: column;
+}
+
+/* header */
+.container-fluid{
+	height: 80px;
+	/* background-color: greenyellow; */
+	border-bottom: 2px solid red;
+	padding-top: 0;
+	width: 100%;
+}
+.top{
+	width: 1300px;
+	height: 78px;
+	/* background-color: rgb(223, 171, 171); */
+	margin: 0 auto;
+	padding-bottom: 2px;
+	padding-top: 0;
+}
+.top .logo{
+	width: 230px;
+	height: 54px;
+	margin: 13px 0;
+	float: left;
+}
+.top .search-box{
+	width: 670px;
+	height: 58px;
+	margin: 11px 100px;
+	float: left;
+	background-color: #fff;
+}
+
+.top .search-box .text{
+	width: 614px;
+	height: 40px;
+	padding: 0;
+	padding-left: 15px;
+	float: left;
+	border: 1px solid gray;
+	border-right: 0;
+	border-top-left-radius: 4px;
+	border-bottom-left-radius: 4px;
+	outline: none;
+}
+
+.search-box form a{
+	width: 56px;
+	height: 40px;
+	/* background-color: seagreen; */
+	float: left;
+	border: 1px solid gray;
+	border-left: 0;
+	border-top-right-radius: 4px;
+	border-bottom-right-radius: 4px;
+}
+.search-box img{
+	width: 30px;
+	height: 30px;
+	margin: 5px 13px;
+}
+
+
+.top .search-box li {
+	font-size: 12px;
+    color: rgba(0, 0, 0, 0.45);
+	float: left;
+	margin-right: 15px;
+}
+
+.top .search-box li	a {
+	color:rgba(0, 0, 0, 0.45);
+	text-decoration: none;
+}
+.top .search-box ul {
+    margin-top: 3px;
+	margin-bottom: 0;
+	float: left;
+}	
+.top .search-box li	a:hover{
+	color:red ;
+	text-decoration  :none; 
+	cursor:pointer;  
+}
+
+.top .cart{
+	width: 200px;
+	height: 24px;
+	margin: 28px 0;
+	float: left;
+}
+.container-fluid .top .cart .iconfont{
+	color: #414141;
+	text-decoration : none; 
+}
+.top .cart .update{
+	width: 58px;
+	margin: 0 30px;
+	float: left;
+}
+.top .cart a{
+	text-decoration : none;
+}
+.top .cart .update .icon-ren{
+	font-size: 20px;
+	margin-right: 10px;
+}
+
+.top .cart .update .up{
+	color:#414141;
+	float: right;
+	margin: 8px 0;
+}
+.top .cart .update:hover .up{
+	color:red;
+}
+
+.top .cart .icon-bqxin{
+	font-size: 20px;
+	margin-left: -10px;
+	margin-right: 35px;
+	float: left;
+}
+.top .cart .icon-gwc{
+	line-height: 30px;
+	font-size: 26px;
+}
+/* menu */
+.menu{
+	width: 1300px;
+	font-size: 16px;
+    line-height: 19px;
+	padding: 14px 0;
+	margin: 0 auto;
+}
+.menu .menu-list .menu-item{
+	font-size: 16px;
+    line-height: 19px;
+	padding: 14px 0;
+	padding-right: 32px;
+	float: left;
+}
+.menu-list .menu-item a{
+	color: rgba(0, 0, 0, 0.85);
+}
+.menu-list .menu-item a:hover {
+	color: #FF5224;
+	text-decoration : none;
+}
+
+.body-content{
+	width: 100%;
+	flex: 1;
+	overflow: auto;
+}
+/* banner */
+.swiper-container{
+	width: 1300px;
+	height: 420px;
+	margin: 0 auto;
+	overflow: hidden;
+}
+.swiper-container .swiper-wrapper .swiper-slide{
+	width: 1300px;
+	height: 420px;
+}
+.swiper-container .swiper-wrapper .red{
+	background:url(../img/banner.jpeg) no-repeat;
+}
+.swiper-container .swiper-wrapper .green{
+	background: green;
+}
+.swiper-container .swiper-wrapper .blue{
+	background: blue;
+}
+
+/* banner-bottom */
+.banner-bottom{
+	width: 1300px;
+	height: 24px;
+	margin: 0 auto;
+	/* background-color: skyblue; */
+}
+
+/* brands */
+.brands{
+	width: 1300px;
+	height: 312px;
+	background-color: rgb(201, 172, 152);
+	margin: 0 auto;
+}
+.brands .floor-header{
+	height: 96px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+    font-weight: bold;
+}
+.brands .floor-header .header-left{
+	font-size: 24px;
+    font-weight: bold;
+    line-height: 32px;
+}
+.brands .floor-header .header-right a{
+	color: #FF5224;
+	font-size: 16px;
+	font-weight: normal;
+	text-decoration : none;
+	display: flex;
+}
+
+.brands .floor-header .header-right a img{
+	width: 16px;
+	height: 16px;
+	margin-top: 4px;
+}
+.brands .content-item .hot-item{
+	overflow: hidden;
+}
+.brands .content-item .hot-item .item{
+	height: 215px;
+	float: left;
+}
+.brands .content-item .hot-item .item a{
+	height: 215px;
+	width: 215px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.brands .content-item .hot-item .item a:hover{
+	transform:scale(1.1);
+	transition-duration: 1s;
+}
+.brands .content-item .hot-item .item a img{
+	width: 171px;
+}
+/* floor */
+.floor-one{
+	width: 1300px;
+	height: 434px;
+	background-color:#f0bfb2;
+	margin: 0 auto;
+}
+.floor-one .floor-header{
+	height: 96px;
+	font-weight: bold;
+	background-color: greenyellow;
+}
+.floor-one .floor-header .header-left{
+	font-size: 24px;
+	line-height: 32px;
+	float: left;
+	padding: 32px 0;
+}
+.floor-one .floor-header .header-right a{
+	color: #FF5224;
+	font-size: 16px;
+	text-decoration : none;
+	float: right;
+	padding: 36px 0;
+	font-weight: lighter;
+}
+
+.floor-one .floor-header .header-right a .next{
+	width: 16px;
+	height: 16px;
+	margin-bottom: 4px;
+}
+.floor-one .content{
+	height: 338px;
+	background-color: lightcoral;
+	overflow: hidden;
+	padding: 0 2px;
+}
+.floor-one .content .con-ul .item a{
+	cursor: pointer;
+	text-decoration: none;
+	background-color: lightblue;
+	float: left;
+}
+.floor-one .content .con-ul .item{
+	padding: 13px 10px;
+	margin: 7px 0;
+	float: left;
+}
+.floor-one .content .con-ul .item .img{
+	padding: 13px;
+}
+.floor-one .content .con-ul .item .img img{
+	width: 170px;
+	height: 170px;
+}
+.floor-one .content .con-ul .item .info{
+	padding: 0 13px;
+}
+.floor-one .content .con-ul .item .info .spuName{
+	font-size: 14px;
+    font-weight: normal;
+    line-height: 18px;
+    height: 36px;
+    color: rgba(0, 0, 0, 0.85);
+	width: 170px;
+	display: -webkit-box;
+	-webkit-box-orient: vertical;
+	-webkit-line-clamp: 2;
+	overflow: hidden;
+	margin-top: 12px;
+}
+.floor-one .content .con-ul .item .info .price{
+	margin-top: 8px;
+}
+.floor-one .content .con-ul .item .info .rate-box {
+	float: left;
+	margin-top: 8px;
+}
+.floor-one .content .con-ul .item .info .rate-box .van-rate{
+	width:94px;
+}
+.floor-one .content .con-ul .item .info .rate-box .van-rate .van-rate__item{
+	width: 14px !important;
+	height: 14px;
+	fill: #fec225;
+	float: left;
+}
+.floor-one .content .con-ul .item .info .rate-box .review-num{
+	float: left;
+	font-size: 12px;
+    color: rgba(0, 0, 0, 0.35);
+    margin-left: 6px;
+}
+
+
+
+.floor-two{
+	width: 1300px;
+	height: 434px;
+	background-color:#bbcccc;
+	margin: 0 auto;
+}
+.floor-three{
+	width: 1300px;
+	height: 434px;
+	background-color:#aa5bb4;
+	margin: 0 auto;
+}
+
+/* footer */
+.footer{
+	width: 1300px;
+	height: 655px;
+	background-color:#5ba7b4;
+	margin: 0 auto;
+}
+
+

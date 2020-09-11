@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>登录页</title>
+    <link rel="stylesheet" href="../css/iconfont.css">
+    <link rel="stylesheet" href="../css/bootstrap.css">
+    <link rel="stylesheet" href="../../dist/css/login.min.css">
+    <script src="../js/jquery-1.12.4.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    
+</head>
+<body>
+    <!-- header -->
+    <div class="container-fluid">
+        <div class="top">
+            <img src="../../dist/img/logo-gsh.png" alt="" class="logo">
+            
+        </div>
+    </div>
+
+
+    <div class="body-content">
+    <!-- main -->
+    <div class="main">
+        <div class="loginBox">
+            <form class="login-form">
+                <div class="title">登录</div>
+                <div class="login-type">
+                    <div id="email">邮箱</div>
+                    <div id="phone">手机号</div>
+                </div>
+                <div class="lel-form">
+                    
+                    <div id="email-1" class="email">
+                        <input class="email-list" type="text" placeholder="邮箱">
+                    </div>
+                    <div id="phone-1" class="phone">
+                        <input class="phone-local" type="text" placeholder="+86">
+                        <input class="phone-number" type="text" placeholder="手机号">
+                    </div>
+                    <input class="pass-form" type="password" placeholder="密码">
+                    <div class="password-remenber">
+                        <div class="remenber">
+                            <input type="checkbox" class="agreement" onclick="">
+                            <span>记住我的账号</span>
+                        </div>
+	                    <div class="forget"><a href="#">忘记密码？</a></div>
+                    </div>
+                </div>
+                <div class="login-botton">
+                    <button class="login-btn">
+                        <span>登录</span>
+                    </button>
+                </div>
+                <div class="login-register">
+                    <p>还没有账号?</p>
+                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo">注册</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+<!--注册部分-->
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" id="exampleModalLabel">注册</h4>
+                </div>
+                <div class="modal-body">
+                    <div class="modal-logo">
+                        <img src="../../dist/img/logo-gsh.png" alt="">
+                    </div>
+                    <form>
+                        <div class="regist-type">
+                            <div id="email">电子邮件注册</div>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" class="form-control" id="u_email" placeholder="邮箱">
+                        </div>
+                        <div class="form-group">
+                            <input type="password" class="form-control" id="u_pwd" placeholder="密码">
+                        </div>
+                        <div class="form-group">
+                            <input type="password" class="form-control" id="sure" placeholder="确认密码">
+                        </div>
+                        <div class="form-g">
+                            <input type="checkbox" name="1" id="agree_1">
+                            <span class="van-checkbox__label">
+                                我同意&nbsp;Gshopper&nbsp;
+                                <span class="legal link">法律条款</span>&nbsp;和&nbsp;
+                                <span class="policy link">隐私保护</span>
+                            </span>
+                        </div>    
+                        <div class="form-g">
+                        <input type="checkbox" name="2" id="agree_2">
+                            <span class="van-checkbox__label">
+                                我同意&nbsp;接收Gshopper推送邮件
+                            </span>
+                        
+                        </div>
+                        
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary btn1" id="reg">注册</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- footer -->
+        <div class="footer">
+            <div class="container">
+                <div class="footer-row">
+                    <ul class="list">
+                        <li>
+                            <div class="lins"></div>
+                            <div class="content">
+                                <h2>自营商品</h2> 
+                                <p>发现全球正品好货</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="lins"></div>
+                            <div class="content">
+                                <h2>自营商品</h2> 
+                                <p>发现全球正品好货</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="lins"></div>
+                            <div class="content">
+                                <h2>自营商品</h2> 
+                                <p>发现全球正品好货</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="lins"></div>
+                            <div class="content">
+                                <h2>自营商品</h2> 
+                                <p>发现全球正品好货</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <div class="col-1">
+                        <div class="box1">
+                            <div class="title">Gshopper App</div>
+                            <div class="download">
+                                <a href="#">下载 iOS 或安卓客户端</a>
+                            </div>
+                        </div>
+                        <div class="box2">
+                            <div class="foot-tit">合作品牌</div>
+                            <div class="foot-list">
+                                <a href="#"></a>
+                                <a href="#"></a>
+                                <a href="#"></a>
+                            </div>
+                            <div class="foot-us">关注我们</div>
+                            <div class="link-our">
+                                <a href="#"></a>
+                                <a href="#"><img src="../../dist/img/wechat-promote.png" alt=""></a>
+                                <a href="#"></a>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-2">
+                        <div class="help">
+                            <p>帮助中心</p>
+                            <ul>
+                                <li><a href="#">免责声明</a></li>
+                                <li><a href="#">退货与退款</a></li>
+                                <li><a href="#">消费者告知书</a></li>
+                                <li><a href="#">常见问题</a></li>
+                                <li><a href="#">隐私政策</a></li>
+                                <li><a href="#">法律条款</a></li>
+                                
+                            </ul>
+                        </div>
+                        <div class="about">
+                            <p>关于 Gshopper</p>
+                            <ul>
+                                <li><a href="#">联系我们</a></li>
+                                <li><a href="#">企业信息</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-pay">
+                    <div class="pay">
+                        <div class="pay-list">
+                            <ul>
+                                <li><a href="#"><img src="../../dist/img/link1.svg" alt=""></a></li>
+                                <li><a href="#"><img src="../../dist/img/link2.png" alt=""></a></li>
+                                <li><a href="#"><img src="../../dist/img/link3.png" alt=""></a></li>
+                                <li><a href="#"><img src="../../dist/img/link4.png" alt=""></a></li>
+                                <li><a href="#"><img src="../../dist/img/link5.png" alt=""></a></li>
+                                <li><a href="#"><img src="../../dist/img/link6.png" alt=""></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="company">
+                    <div class="foot-box">
+                        <p  class="company-name">
+                            <span  class="company-name-item">沪 ICP 备 B2-20130065</span> 
+                            <span  class="company-name-item">（沪）-经营性-2020-0041</span> 
+                            <a  target="_blank" href="#" class="beian company-name-item">
+                                <img  src="../img/gongan.png" alt="">
+                                沪公网安备 31011502008503 号 </a> 
+                            <a  target="_blank" href="#"  class="shanghai company-name-item">
+                                <img src="../img/buse1.png" alt=""></a>
+                                上海载和网络科技有限公司
+                        </p>
+                        <p>
+                            中国（上海）自由贸易试验区东方路1217、1217-1号6幢6楼F-3
+                        </p>
+                        <p data-v-6682cde2="">
+                            <span>Copyright © 2020 Gshopper. </span> 
+                            <span class="footer-mobile">All Rights Reserved. </span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        $(document).ready(function(){
+
+            let email = $("#email");
+            let phone = $("#phone");
+            let email_1 = $("#email-1");
+            let phone_1 = $("#phone-1");
+            let register = $("#register");
+
+            $("#phone-1").hide();
+            $("#email-1").show();
+            email.css({"border-bottom":"2px solid #FF5224",
+                        "color": "#FF5224"});
+            email.click(function(){
+                email.css({"border-bottom":"2px solid #FF5224",
+                        "color": "#FF5224"});
+                phone.css({"border-bottom":"0",
+                        "color": "black"});
+                $("#phone-1").hide();
+                $("#email-1").show();
+
+            })
+            phone.click(function(){
+                phone.css({"border-bottom":"2px solid #FF5224",
+                        "color": "#FF5224"});
+                email.css({"border-bottom":"0",
+                        "color": "black"});
+                    $("#email-1").hide();
+                    $("#phone-1").show();
+            })
+        })
+    </script>
+
+<script src="../js/jquery.cookie.js"></script>
+<script src="../js/tools.js"></script>
+    <!-- <script>
+
+        class Registor{
+            constructor(){
+                //邮箱名
+                this.o_email = document.querySelector('#u_email');
+                //密码
+                this.o_pwd = document.querySelector('#u_pwd');
+                //确认密码
+                this.o_sure = document.querySelector('#sure');
+                //注册按钮
+                this.o_reg = document.querySelector('#reg');
+                //添加事件
+                this.addEvent();
+
+               
+            }
+            addEvent(){
+                var arr = [false,false,false];
+
+                this.o_sure.onblur = function(){
+						if(!this.o_sure.value){
+							alert('确认密码不能为空！');
+							arr[2] = false;
+							return;
+						}else{
+							arr[2] = true;
+						}
+					}
+                
+                //判断用户名是否合法以及是否在cookie中存在 
+                this.o_email.onblur = function(){
+                    let re = /\w[-\w.+]*@([A-Za-z0-9][-A-Za-z0-9]+\.)+[A-Za-z]{2,14}/;
+                   
+                    let s_email = this.value;
+                    //检测是否合格
+                    if(!re.test(s_email)){
+                        alert('正确的邮箱格式！');
+                        arr[0] = false;
+                        return;
+                    }else{
+                        arr[0] = true;
+                    }
+                   //获取cookie
+                    let cookieStr = getCookie('registors') ? getCookie('registors') : '';
+                    //将cookie字符串转为json对象
+                    let cookieObj = convertStrToObj(cookieStr);
+                    //判断注册的用户名是否在cookie中存在
+                    //in : 判断一个属性是否属于某个对象
+                    if(s_email in cookieObj){
+                        alert('用户名已存在！');
+                        arr[0] = false;
+                        return;
+                    }else{
+                        arr[0] = true;
+                    }
+                } 
+
+                //判断密码是否合法
+                this.o_pwd.onblur = function(){
+                    let re = /^\d{8,16}$/;
+                    //获取密码
+                    let s_pwd = this.value;
+                    //检测是否合法
+                    if(!re.test(s_pwd)){
+                        alert('请输入8~16位的数字！');
+                        arr[1] = false;
+                    }else{
+                        arr[1] = true;
+                    }
+                }
+                //密码与确认密码是否一致
+                //记录this
+                let that = this;
+                this.o_sure.onblur = function(){
+                    //原密码
+                    let s_pwd = that.o_pwd.value;
+                    //确认密码
+                    let s_sure = this.value;
+                    //检测 是否一致
+                    if(s_pwd !== s_sure){
+                        alert('两次密码不一致！');
+                        arr[2] = false;
+                    }else{
+                        arr[2] = true;
+                    }
+                }
+
+
+				//如果页面中的内容全部合法，就可以进行正常注册了
+                //点击注册按钮，进行注册
+                this.o_reg.onclick = function(){
+                    if(arr.indexOf(false) === -1){
+                        
+                    //获取 用户名
+                    let s_email = this.o_email.value;
+                    //获取密码
+                    let s_pwd = this.o_pwd.value;
+                    //获取cookie
+                    let cookieStr = getCookie('registors') ? getCookie('registors') : '';
+                    //将cookie字符串转为json对象
+                    let cookieObj = convertStrToObj(cookieStr);
+                    //将新的用户名与密码存入对象
+                    cookieObj[s_email] = s_pwd;
+                    //将改变后的对象转为字符串并存入cookie
+                    createCookie('registors',JSON.stringify(cookieObj),{expires : 7,path : '/'});
+                    }else{
+                        alert('请完善表单！');
+                        
+                    }
+                }.bind(this);
+                //跳转到登录页
+                this.o_log.onclick = function(){
+                    location.href = 'login.html';
+                }	
+            }
+        }
+        new Registor();
+    </script> -->
+<!-- 注册 -->
+    <script>
+        class Registor{
+            constructor(){
+                this.addEvent();
+            }
+            addEvent(){
+                var arr = [false,false,false];
+                
+                $('#u_email').blur(function(){
+                    let re = /\w[-\w.+]*@([A-Za-z0-9][-A-Za-z0-9]+\.)+[A-Za-z]{2,14}/;
+                   
+                    let s_email =$('#u_email').val();
+                    //检测是否合格
+                    if(!re.test(s_email)){
+                        alert('正确的邮箱格式！');
+                        arr[0] = false;
+                        return;
+                    }else{
+                        arr[0] = true;
+                    }
+                   //获取cookie
+                    let cookieStr = $.cookie('registors') ? $.cookie('registors') : '';
+                    //将cookie字符串转为json对象
+                    let cookieObj = convertStrToObj(cookieStr);
+                    if(s_email in cookieObj){
+                        alert('用户名已存在！');
+                        arr[0] = false;
+                        return;
+                    }else{
+                        arr[0] = true;
+                    }
+                })
+
+                //判断密码是否合法
+                $('#u_pwd').blur(function(){
+                    let re = /^\d{8,16}$/;
+                    let s_pwd = $('#u_pwd').val();
+                    //检测是否合法
+                    if(!re.test(s_pwd)){
+                        alert('请输入8~16位的数字！');
+                        arr[1] = false;
+                    }else{
+                        arr[1] = true;
+                    }
+                })
+                
+              
+                $("#sure").blur(function(){
+                    let s_pwd = $('#u_pwd').val();
+                    let s_sure = $("#sure").val();
+                    if(s_pwd !== s_sure){
+                        alert('两次密码不一致！');
+                        arr[2] = false;
+                    }else{
+                        arr[2] = true;
+                    }
+                }) 
+
+
+                $('.btn1').click(function(){
+                    if(arr.indexOf(false) === -1){
+                        
+                    //获取 用户名
+                    let s_email = $('#u_email').val();
+                    //获取密码
+                    let s_pwd = $('#u_pwd').val();
+                    //获取cookie
+                    let cookieStr = $.cookie('registors') ? $.cookie('registors') : '';
+                    //将cookie字符串转为json对象
+                    let cookieObj = convertStrToObj(cookieStr);
+                    //将新的用户名与密码存入对象
+                    cookieObj[s_email] = s_pwd;
+                    //将改变后的对象转为字符串并存入cookie
+                    $.cookie('registors',JSON.stringify(cookieObj),{expires : 7,path : '/'});
+                    alert('注册成功');
+                    location.href = 'login.html';
+                    }else{
+                        alert('请完善表单！');
+                        
+                    }
+                })
+
+                
+                
+            }
+        }
+        new Registor();
+    </script>
+
+<!-- 登录 -->
+    <script>
+        let o_name = $('.email-list');
+        let o_pwd = $('.pass-form');
+
+        o_name.blur(function(){
+            let re = /\w[-\w.+]*@([A-Za-z0-9][-A-Za-z0-9]+\.)+[A-Za-z]{2,14}/;
+            let s_name = o_name.val();
+            if(!re.test(s_name)){
+                alert('邮箱格式错误');
+            }
+        })
+        o_pwd.blur(function(){
+            let re = /^\d{8,16}$/;
+            let s_pwd = o_pwd.val();
+            if(!re.test(s_pwd)){
+                alert('密码格式错误');
+            }
+        })
+
+
+        let cookieStr = $.cookie('registors') ? $.cookie('registors'):'';
+        let cookieObj = convertStrToObj(cookieStr);
+
+        $('.login-btn').click(function(){
+
+            if(o_name.val() in cookieObj){
+                if(cookieObj[o_name.val()] === o_pwd.val()){
+                    
+                    location.href = 'product.html';
+                    alert('登陆成功');
+                    
+                }else{
+                    alert('您的密码不正确！');
+                }
+            }else{
+                alert('您的用户名不存在！');
+            }
+        })
+    </script>
+
+</body>
+</html>

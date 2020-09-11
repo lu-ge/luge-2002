@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>详情页</title>
+    <link rel="stylesheet" href="../../dist/css/iconfont.css">
+    <link rel="stylesheet" href="../../dist/css/details.min.css">
+    <link rel="stylesheet" href="../../dist/css/bootstrap.css">
+    <script src="../../dist/js/jquery-1.12.4.min.js"></script>
+    <script src="../../dist/js/bootstrap.min.js"></script>
+    <script src="../js/details.js"></script>
+</head>
+<body>
+    <!-- header -->
+    <div class="container-fluid">
+        <div class="top">
+            <img src="../../dist/img/logo-gsh.png" alt="" class="logo">
+            <div class="search-box">
+                <form class="form" action="https://www.baidu.com/" target="_blank">
+                    <input class="text" type="text" placeholder="请输入关键词">
+                    <a href="#" class="suo"><img src="../../dist/img/suo.jpg" alt=""></a>
+                </form>
+                <div>
+                    <ul data-v-3addc7e1="" class="hot-search-keyword">
+                        <li><a href="">面膜</a> </li>
+                        <li><a href="">洗面奶</a></li>
+                        <li><a href="">防晒</a></li>
+                        <li><a href="">乐高</a></li>
+                        <li><a href="">资生堂</a></li>
+                        <li><a href="">蒂佳婷</a></li>
+                        <li><a href="">眼影</a></li>
+                        <li><a href="">Refa</a></li>
+                        <li><a href="">SK-II</a></li>
+                        <li><a href="">雅诗兰黛</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="cart">
+                    <a class="update" href="#">
+                        <span class="iconfont icon-ren"></span>
+                        <span class="up">登录</span>
+                    </a>
+                <a href="#"><span class="iconfont icon-bqxin"></span></a>
+                <a href="#"><span class="iconfont icon-gwc"></span></a>
+            </div>
+        </div>
+    </div>
+    <div class="body-content">
+        <!-- content -->
+        <div class="product-info">
+            <div class="bread-leader">
+                <span><a href="#">首页</a></span>
+                <span><img src="../../dist/img/next-1.png" alt=""></span>
+                <span><a href="#">美容彩妆</a></span>
+                <span><img src="../../dist/img/next-1.png" alt=""></span>
+                <span><a href="#">护肤</a></span>
+                <span><img src="../../dist/img/next-1.png" alt=""></span>
+                <span>特色类别</span>
+            </div>
+            <div class="pro-outer">
+                <!-- <div class="slide">
+                    <button disabled="disabled" class="btn-prev">
+                        <img src="../../dist/img/up.png" alt="">
+                    </button>
+                    <div class="pro-list">
+                        <img id="img_1" src="../../dist/img/slider1.jpeg" alt="">
+                        <img id="img_2"  src="../../dist/img/slider2.jpeg" alt="">
+                        <img id="img_3"  src="../../dist/img/slider3.jpeg" alt="">
+                        <img id="img_4"  src="../../dist/img/slider4.jpeg" alt="">
+                    </div>
+                    <button disabled="disabled" class="btn-prev">
+                        <img src="../../dist/img/down.png" alt="">
+                    </button>
+
+                </div> -->
+                <!-- <div class="pro-big">
+                    <div class="pic_big" id="pic_big"></div>
+                    <div class="share">
+                        <span>分享</span>
+                        <img data-v-53187009="" src="https://ws.izenecdn.com/st/wapsite/img/copy-link.053a097a.svg" alt="">
+                        <img data-v-53187009="" src="https://ws.izenecdn.com/st/wapsite/img/Facebook.c2b2389e.svg" alt="">
+                        <div class="wish">
+                            <div class="wish-title">愿望单</div>
+                            <div class="heart"></div>
+                        </div>
+                    </div>
+                </div> -->
+                <!-- <div class="pro-information">
+                    <a class="link" href="#">肌肤之钥</a>
+                    <p class="product-name">CPB肌肤之钥光凝防晒妆前隔离乳 36ml （义乌保税仓发货）</p>
+                    <div class="pro-price">
+                        <div class="money">
+                            <span >￥  
+                                288.00</span>
+                        </div>
+                        <div class="sale-price">¥ 303.16</div>
+                        <div class="price-count">
+                            <span>5%</span> 
+                            <b>&#8595</b>
+                        </div>
+                    </div>
+                    <div class="product-text">
+                        <span>价格已包含税费，无需另付税费</span>
+                    </div>
+                    <div class="product-option">
+                        <div class="product-label">
+                            <div class="label">
+                                款式</div>
+                            <div class="select">
+                                <span>滋润型/长管 </span>
+                                <div class="list">
+                                    <img src="../../dist/img/down.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-label">
+                            <div class="label">
+                                净含量</div>
+                            <div class="select">
+                                <span>36 ml </span>
+                                <div class="list">
+                                    <img src="../../dist/img/down.png" alt="">
+                                </div>
+                            </div>
+                            
+
+                        </div>
+                        <div class="product-ship">
+                            <div class="option-sel">
+                               <span>送达</span> 
+                            </div>
+                            <div class="option-selector">
+                                <div class="ware-radio"></div>
+                                <div class="ware-price">免运费</div>
+                                <div class="ware-day">3 - 5 天 配送自 中国</div>
+                                <div class="ware-question">?</div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <div class="option-quantity">
+                        <div class="quantity">数量</div>
+                        <div class="cart-calculator">
+                            <button class="price-min"> </button>
+                            <input type="number" class="price-input" placeholder="1">
+                            <button class="price-min price-max"></button>
+                        </div>
+                    </div>
+                    <div class="product-label">
+                        <div class="option-select">总价</div>
+                        <div class="product-total">
+                            ¥
+                            288.00
+                        </div>
+                    </div>
+                    <div class="btnBox">
+                        <button class="join"><span>加入购物车</span></button>
+                        <button class="buy"><span>立即购买</span></button>
+                    </div>
+                </div> -->
+            </div> 
+        </div>
+
+        
+        <!-- footer -->
+        <div class="footer">
+            <div class="container">
+                <div class="footer-row">
+                    <ul class="list">
+                        <li>
+                            <div class="lins"></div>
+                            <div class="content">
+                                <h2>自营商品</h2> 
+                                <p>发现全球正品好货</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="lins"></div>
+                            <div class="content">
+                                <h2>自营商品</h2> 
+                                <p>发现全球正品好货</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="lins"></div>
+                            <div class="content">
+                                <h2>自营商品</h2> 
+                                <p>发现全球正品好货</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="lins"></div>
+                            <div class="content">
+                                <h2>自营商品</h2> 
+                                <p>发现全球正品好货</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <div class="col-1">
+                        <div class="box1">
+                            <div class="title">Gshopper App</div>
+                            <div class="download">
+                                <a href="#">下载 iOS 或安卓客户端</a>
+                            </div>
+                        </div>
+                        <div class="box2">
+                            <div class="foot-tit">合作品牌</div>
+                            <div class="foot-list">
+                                <a href="#"></a>
+                                <a href="#"></a>
+                                <a href="#"></a>
+                            </div>
+                            <div class="foot-us">关注我们</div>
+                            <div class="link-our">
+                                <a href="#"></a>
+                                <a href="#"><img src="../../dist/img/wechat-promote.png" alt=""></a>
+                                <a href="#"></a>
+    
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-2">
+                        <div class="help">
+                            <p>帮助中心</p>
+                            <ul>
+                                <li><a href="#">免责声明</a></li>
+                                <li><a href="#">退货与退款</a></li>
+                                <li><a href="#">消费者告知书</a></li>
+                                <li><a href="#">常见问题</a></li>
+                                <li><a href="#">隐私政策</a></li>
+                                <li><a href="#">法律条款</a></li>
+                                
+                            </ul>
+                        </div>
+                        <div class="about">
+                            <p>关于 Gshopper</p>
+                            <ul>
+                                <li><a href="#">联系我们</a></li>
+                                <li><a href="#">企业信息</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-pay">
+                    <div class="pay">
+                        <div class="pay-list">
+                            <ul>
+                                <li><a href="#"><img src="../../dist/img/link1.svg" alt=""></a></li>
+                                <li><a href="#"><img src="../../dist/img/link2.png" alt=""></a></li>
+                                <li><a href="#"><img src="../../dist/img/link3.png" alt=""></a></li>
+                                <li><a href="#"><img src="../../dist/img/link4.png" alt=""></a></li>
+                                <li><a href="#"><img src="../../dist/img/link5.png" alt=""></a></li>
+                                <li><a href="#"><img src="../../dist/img/link6.png" alt=""></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="company">
+                    <div class="foot-box">
+                        <p  class="company-name">
+                            <span  class="company-name-item">沪 ICP 备 B2-20130065</span> 
+                            <span  class="company-name-item">（沪）-经营性-2020-0041</span> 
+                            <a  target="_blank" href="#" class="beian company-name-item">
+                                <img  src="../../dist/img/gongan.png" alt="">
+                                沪公网安备 31011502008503 号 </a> 
+                            <a  target="_blank" href="#"  class="shanghai company-name-item">
+                                <img src="../../dist/img/buse1.png" alt=""></a>
+                                上海载和网络科技有限公司
+                        </p>
+                        <p>
+                            中国（上海）自由贸易试验区东方路1217、1217-1号6幢6楼F-3
+                        </p>
+                        <p data-v-6682cde2="">
+                            <span>Copyright © 2020 Gshopper. </span> 
+                            <span class="footer-mobile">All Rights Reserved. </span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        $(document).ready(function(){
+            let img_1 = $("#img_1");
+            let img_2 = $("#img_2");
+            let img_3 = $("#img_3");
+            let img_4 = $("#img_4");
+
+            $("#pic_big").css({"background-image":"url(../../dist/img/slider1.jpeg)"});
+            img_1.mouseenter(function(){
+                $("#pic_big").css({"background-image":"url(../../dist/img/slider1.jpeg)","background-repeat":"repeat-x"});
+            })
+            img_2.mouseenter(function(){
+                $("#pic_big").css({"background-image":"url(../../dist/img/slider2.jpeg)","background-repeat":"repeat-x"});
+            })
+            img_3.mouseenter(function(){
+                $("#pic_big").css({"background-image":"url(../../dist/img/slider3.jpeg)","background-repeat":"repeat-x"});
+            })
+            img_4.mouseenter(function(){
+                $("#pic_big").css({"background-image":"url(../../dist/img/slider4.jpeg)","background-repeat":"repeat-x"});
+            })
+        })
+    </script>
+</body>
+</html>

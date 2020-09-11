@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>商品页</title>
+    <script src="../js/jquery-1.12.4.min.js"></script>
+    <link rel="stylesheet" href="../css/iconfont.css">
+    <link rel="stylesheet" href="../../dist/css/product.min.css">
+    <script src="../js/product.js"></script>
+    
+</head>
+<body>
+    <!-- header -->
+    <div class="container-fluid">
+        <div class="top">
+            <img src="../../dist/img/logo-gsh.png" alt="" class="logo">
+            
+        </div>
+    </div>
+
+    <div class="body-content">
+    <!-- main -->
+        <div class="main">
+            <div class="product-cont">
+                <div class="bread-leader">
+                    <span><a href="#">首页</a></span>
+                    <span><img src="../../dist/img/next-1.png" alt=""></span>
+                    <span>特色类别</span>
+                </div>
+                <div class="pc-prod-content">
+                    <div class="product-filter">
+                        <button>重置</button>
+                        <div class="price-info">
+                            <div class="can-check">
+                                <input type="checkbox" class="agreement" onclick="">
+                                <span>当前国家可配送</span>
+                            </div>
+                            <div class="title">售价</div>
+                            <div class="price">
+                                <div class="price-num">
+                                    <span class="min-price">¥0</span> 
+                                    <span class="max-price">¥999,999,999</span>
+                                </div>
+                                <div class="slider">
+                                    <input type="range" min="0" max="999999999" value="70"/>
+                                </div>
+                                <div class="price-tempt">
+                                    <input type="text" placeholder="￥0">
+                                    <span>-</span>
+                                    <input type="text" placeholder="￥999999999">
+                                </div>
+                            </div>
+                            <div class="collapse">
+                                <div class="coll-item">
+                                    <div class="cell-title"><span>类别</span></div>
+                                    <div class="down"><img src="../../dist/img/down.png" alt=""></div>
+                                    <ul class="col-list">
+                                        <li>
+                                            <input type="checkbox" name="" class="check">
+                                            <span>数码家电(555)</span>
+                                        </li>
+                                        <li>
+                                            <input type="checkbox" name="" class="check">
+                                            <span>数码家电(555)</span>
+    
+                                        </li>
+                                        <li>
+                                            <input type="checkbox" name="" class="check">
+                                            <span>数码家电(555)</span>
+                                        </li>
+                                        <li>
+                                            <input type="checkbox" name="" class="check">
+                                            <span>数码家电(555)</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                                
+                                <div class="coll-item ">
+                                    <div class="cell-title"><span>品牌</span></div>
+                                    <div class="down"><img src="../../dist/img/down.png" alt=""></div>
+                                    <ul class="col-list">
+                                        <li>
+                                            <input type="checkbox" name="" class="check">
+                                            <span>数码家电(555)</span>
+                                        </li>
+                                        <li>
+                                            <input type="checkbox" name="" class="check">
+                                            <span>数码家电(555)</span>
+    
+                                        </li>
+                                        <li>
+                                            <input type="checkbox" name="" class="check">
+                                            <span>数码家电(555)</span>
+                                        </li>
+                                        <li>
+                                            <input type="checkbox" name="" class="check">
+                                            <span>数码家电(555)</span>
+                                        </li>
+                                        <li>
+                                            <input type="checkbox" name="" class="check">
+                                            <span>数码家电(555)</span>
+                                        </li>
+                                        <li>
+                                            <input type="checkbox" name="" class="check">
+                                            <span>数码家电(555)</span>
+                                        </li>
+                                        <li>
+                                            <input type="checkbox" name="" class="check">
+                                            <span>数码家电(555)</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                               
+                                <div class="coll-item">
+                                    <div class="cell-title"><span>品牌所在国</span></div>
+                                    <div class="down"><img src="../../dist/img/down.png" alt=""></div>
+                                    <ul class="col-list">
+                                        <li>
+                                            <input type="checkbox" name="" class="check">
+                                            <span>数码家电(555)</span>
+                                        </li>
+                                        <li>
+                                            <input type="checkbox" name="" class="check">
+                                            <span>数码家电(555)</span>
+    
+                                        </li>
+                                        <li>
+                                            <input type="checkbox" name="" class="check">
+                                            <span>数码家电(555)</span>
+                                        </li>
+                                        
+                                    </ul>
+                                </div>
+                               
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="product-list">
+                        <div class="product-warp">
+                            <div class="product-wrap-left">
+                                <span>排序</span> 
+                                <ul>
+                                    <li>销量</li>
+                                    <li>新品</li>
+                                    <li>价格低到高</li>
+                                    <li>价格高到低</li>
+                                </ul>
+                            </div>
+                            <div class="product-wrap-right">
+                                结果
+                                <span>30,336</span>
+                            </div>
+                        </div>
+                        <div class="product-list-cont">
+
+
+                            <!-- <div class="product-content">
+                                <a href="./details.html" class="lins-pro">
+                                    <img src="../../dist/img/huf1.jpeg" alt="">
+                                    <div class="brandBox">
+                                        <img src="../../dist/img/china.png" alt="">
+                                        <span>悦诗风吟</span>
+                                    </div>
+                                    <div class="info">
+                                        <span title="悦诗风吟绿茶精萃平衡柔肤露（保质2021.4.30）" class="product-info">悦诗风吟绿茶精萃平衡柔肤露（保质2021.4.30）</span>
+                                        <div class="price">
+                                            <div class="num">¥
+                                            29.00</div>
+                                            <span class="discount"><span>40%</span> <b>&#8595</b></span></div>
+                                        <div class="rate-box">
+                                            <div class="van-rate">
+                                                <svg fill="#bdbdbd" viewBox="0 0 32 32" class="van-rate__item" style="width: 20px;"><path d="M32 12.408l-11.056-1.607-4.944-10.018-4.944 10.018-11.056 1.607 8 7.798-1.889 11.011 9.889-5.199 9.889 5.199-1.889-11.011 8-7.798z"></path></svg>
+                                                <svg fill="#bdbdbd" viewBox="0 0 32 32" class="van-rate__item" style="width: 20px;"><path d="M32 12.408l-11.056-1.607-4.944-10.018-4.944 10.018-11.056 1.607 8 7.798-1.889 11.011 9.889-5.199 9.889 5.199-1.889-11.011 8-7.798z"></path></svg>
+                                                <svg fill="#bdbdbd" viewBox="0 0 32 32" class="van-rate__item" style="width: 20px;"><path d="M32 12.408l-11.056-1.607-4.944-10.018-4.944 10.018-11.056 1.607 8 7.798-1.889 11.011 9.889-5.199 9.889 5.199-1.889-11.011 8-7.798z"></path></svg>
+                                                <svg fill="#bdbdbd" viewBox="0 0 32 32" class="van-rate__item" style="width: 20px;"><path d="M32 12.408l-11.056-1.607-4.944-10.018-4.944 10.018-11.056 1.607 8 7.798-1.889 11.011 9.889-5.199 9.889 5.199-1.889-11.011 8-7.798z"></path></svg>
+                                                <svg fill="#bdbdbd" viewBox="0 0 32 32" class="van-rate__item" style="width: 20px;"><path d="M32 12.408l-11.056-1.607-4.944-10.018-4.944 10.018-11.056 1.607 8 7.798-1.889 11.011 9.889-5.199 9.889 5.199-1.889-11.011 8-7.798z"></path></svg>
+                                            </div>
+                                            <span class="review-num">9</span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="product-content">
+                                <a href="./details.html" class="lins-pro">
+                                    <img src="../../dist/img/huf1.jpeg" alt="">
+                                    <div class="brandBox">
+                                        <img src="../../dist/img/china.png" alt="">
+                                        <span>悦诗风吟</span>
+                                    </div>
+                                    <div class="info">
+                                        <span title="悦诗风吟绿茶精萃平衡柔肤露（保质2021.4.30）" class="product-info">悦诗风吟绿茶精萃平衡柔肤露（保质2021.4.30）</span>
+                                        <div class="price">
+                                            <div class="num">¥
+                                            29.00</div>
+                                            <span class="discount"><span>40%</span> <b>&#8595</b></span></div>
+                                        <div class="rate-box">
+                                            <div class="van-rate">
+                                                <svg fill="#bdbdbd" viewBox="0 0 32 32" class="van-rate__item" style="width: 20px;"><path d="M32 12.408l-11.056-1.607-4.944-10.018-4.944 10.018-11.056 1.607 8 7.798-1.889 11.011 9.889-5.199 9.889 5.199-1.889-11.011 8-7.798z"></path></svg>
+                                                <svg fill="#bdbdbd" viewBox="0 0 32 32" class="van-rate__item" style="width: 20px;"><path d="M32 12.408l-11.056-1.607-4.944-10.018-4.944 10.018-11.056 1.607 8 7.798-1.889 11.011 9.889-5.199 9.889 5.199-1.889-11.011 8-7.798z"></path></svg>
+                                                <svg fill="#bdbdbd" viewBox="0 0 32 32" class="van-rate__item" style="width: 20px;"><path d="M32 12.408l-11.056-1.607-4.944-10.018-4.944 10.018-11.056 1.607 8 7.798-1.889 11.011 9.889-5.199 9.889 5.199-1.889-11.011 8-7.798z"></path></svg>
+                                                <svg fill="#bdbdbd" viewBox="0 0 32 32" class="van-rate__item" style="width: 20px;"><path d="M32 12.408l-11.056-1.607-4.944-10.018-4.944 10.018-11.056 1.607 8 7.798-1.889 11.011 9.889-5.199 9.889 5.199-1.889-11.011 8-7.798z"></path></svg>
+                                                <svg fill="#bdbdbd" viewBox="0 0 32 32" class="van-rate__item" style="width: 20px;"><path d="M32 12.408l-11.056-1.607-4.944-10.018-4.944 10.018-11.056 1.607 8 7.798-1.889 11.011 9.889-5.199 9.889 5.199-1.889-11.011 8-7.798z"></path></svg>
+                                            </div>
+                                            <span class="review-num">9</span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="product-content">
+                                <a href="./details.html" class="lins-pro">
+                                    <img src="../../dist/img/huf1.jpeg" alt="">
+                                    <div class="brandBox">
+                                        <img src="../../dist/img/china.png" alt="">
+                                        <span>悦诗风吟</span>
+                                    </div>
+                                    <div class="info">
+                                        <span title="悦诗风吟绿茶精萃平衡柔肤露（保质2021.4.30）" class="product-info">悦诗风吟绿茶精萃平衡柔肤露（保质2021.4.30）</span>
+                                        <div class="price">
+                                            <div class="num">¥
+                                            29.00</div>
+                                            <span class="discount"><span>40%</span> <b>&#8595</b></span></div>
+                                        <div class="rate-box">
+                                            <div class="van-rate">
+                                                <svg fill="#bdbdbd" viewBox="0 0 32 32" class="van-rate__item" style="width: 20px;"><path d="M32 12.408l-11.056-1.607-4.944-10.018-4.944 10.018-11.056 1.607 8 7.798-1.889 11.011 9.889-5.199 9.889 5.199-1.889-11.011 8-7.798z"></path></svg>
+                                                <svg fill="#bdbdbd" viewBox="0 0 32 32" class="van-rate__item" style="width: 20px;"><path d="M32 12.408l-11.056-1.607-4.944-10.018-4.944 10.018-11.056 1.607 8 7.798-1.889 11.011 9.889-5.199 9.889 5.199-1.889-11.011 8-7.798z"></path></svg>
+                                                <svg fill="#bdbdbd" viewBox="0 0 32 32" class="van-rate__item" style="width: 20px;"><path d="M32 12.408l-11.056-1.607-4.944-10.018-4.944 10.018-11.056 1.607 8 7.798-1.889 11.011 9.889-5.199 9.889 5.199-1.889-11.011 8-7.798z"></path></svg>
+                                                <svg fill="#bdbdbd" viewBox="0 0 32 32" class="van-rate__item" style="width: 20px;"><path d="M32 12.408l-11.056-1.607-4.944-10.018-4.944 10.018-11.056 1.607 8 7.798-1.889 11.011 9.889-5.199 9.889 5.199-1.889-11.011 8-7.798z"></path></svg>
+                                                <svg fill="#bdbdbd" viewBox="0 0 32 32" class="van-rate__item" style="width: 20px;"><path d="M32 12.408l-11.056-1.607-4.944-10.018-4.944 10.018-11.056 1.607 8 7.798-1.889 11.011 9.889-5.199 9.889 5.199-1.889-11.011 8-7.798z"></path></svg>
+                                            </div>
+                                            <span class="review-num">9</span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="product-content">
+                                <a href="./details.html" class="lins-pro">
+                                    <img src="../../dist/img/huf1.jpeg" alt="">
+                                    <div class="brandBox">
+                                        <img src="../../dist/img/china.png" alt="">
+                                        <span>悦诗风吟</span>
+                                    </div>
+                                    <div class="info">
+                                        <span title="悦诗风吟绿茶精萃平衡柔肤露（保质2021.4.30）" class="product-info">悦诗风吟绿茶精萃平衡柔肤露（保质2021.4.30）</span>
+                                        <div class="price">
+                                            <div class="num">¥
+                                            29.00</div>
+                                            <span class="discount"><span>40%</span> <b>&#8595</b></span></div>
+                                        <div class="rate-box">
+                                            <div class="van-rate">
+                                                <svg fill="#bdbdbd" viewBox="0 0 32 32" class="van-rate__item" style="width: 20px;"><path d="M32 12.408l-11.056-1.607-4.944-10.018-4.944 10.018-11.056 1.607 8 7.798-1.889 11.011 9.889-5.199 9.889 5.199-1.889-11.011 8-7.798z"></path></svg>
+                                                <svg fill="#bdbdbd" viewBox="0 0 32 32" class="van-rate__item" style="width: 20px;"><path d="M32 12.408l-11.056-1.607-4.944-10.018-4.944 10.018-11.056 1.607 8 7.798-1.889 11.011 9.889-5.199 9.889 5.199-1.889-11.011 8-7.798z"></path></svg>
+                                                <svg fill="#bdbdbd" viewBox="0 0 32 32" class="van-rate__item" style="width: 20px;"><path d="M32 12.408l-11.056-1.607-4.944-10.018-4.944 10.018-11.056 1.607 8 7.798-1.889 11.011 9.889-5.199 9.889 5.199-1.889-11.011 8-7.798z"></path></svg>
+                                                <svg fill="#bdbdbd" viewBox="0 0 32 32" class="van-rate__item" style="width: 20px;"><path d="M32 12.408l-11.056-1.607-4.944-10.018-4.944 10.018-11.056 1.607 8 7.798-1.889 11.011 9.889-5.199 9.889 5.199-1.889-11.011 8-7.798z"></path></svg>
+                                                <svg fill="#bdbdbd" viewBox="0 0 32 32" class="van-rate__item" style="width: 20px;"><path d="M32 12.408l-11.056-1.607-4.944-10.018-4.944 10.018-11.056 1.607 8 7.798-1.889 11.011 9.889-5.199 9.889 5.199-1.889-11.011 8-7.798z"></path></svg>
+                                            </div>
+                                            <span class="review-num">9</span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="product-content">
+                                <a href="./details.html" class="lins-pro">
+                                    <img src="../../dist/img/huf1.jpeg" alt="">
+                                    <div class="brandBox">
+                                        <img src="../../dist/img/china.png" alt="">
+                                        <span>悦诗风吟</span>
+                                    </div>
+                                    <div class="info">
+                                        <span title="悦诗风吟绿茶精萃平衡柔肤露（保质2021.4.30）" class="product-info">悦诗风吟绿茶精萃平衡柔肤露（保质2021.4.30）</span>
+                                        <div class="price">
+                                            <div class="num">¥
+                                            29.00</div>
+                                            <span class="discount"><span>40%</span> <b>&#8595</b></span></div>
+                                        <div class="rate-box">
+                                            <div class="van-rate">
+                                                <svg fill="#bdbdbd" viewBox="0 0 32 32" class="van-rate__item" style="width: 20px;"><path d="M32 12.408l-11.056-1.607-4.944-10.018-4.944 10.018-11.056 1.607 8 7.798-1.889 11.011 9.889-5.199 9.889 5.199-1.889-11.011 8-7.798z"></path></svg>
+                                                <svg fill="#bdbdbd" viewBox="0 0 32 32" class="van-rate__item" style="width: 20px;"><path d="M32 12.408l-11.056-1.607-4.944-10.018-4.944 10.018-11.056 1.607 8 7.798-1.889 11.011 9.889-5.199 9.889 5.199-1.889-11.011 8-7.798z"></path></svg>
+                                                <svg fill="#bdbdbd" viewBox="0 0 32 32" class="van-rate__item" style="width: 20px;"><path d="M32 12.408l-11.056-1.607-4.944-10.018-4.944 10.018-11.056 1.607 8 7.798-1.889 11.011 9.889-5.199 9.889 5.199-1.889-11.011 8-7.798z"></path></svg>
+                                                <svg fill="#bdbdbd" viewBox="0 0 32 32" class="van-rate__item" style="width: 20px;"><path d="M32 12.408l-11.056-1.607-4.944-10.018-4.944 10.018-11.056 1.607 8 7.798-1.889 11.011 9.889-5.199 9.889 5.199-1.889-11.011 8-7.798z"></path></svg>
+                                                <svg fill="#bdbdbd" viewBox="0 0 32 32" class="van-rate__item" style="width: 20px;"><path d="M32 12.408l-11.056-1.607-4.944-10.018-4.944 10.018-11.056 1.607 8 7.798-1.889 11.011 9.889-5.199 9.889 5.199-1.889-11.011 8-7.798z"></path></svg>
+                                            </div>
+                                            <span class="review-num">9</span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="product-content">
+                                <a href="./details.html" class="lins-pro">
+                                    <img src="../../dist/img/huf1.jpeg" alt="">
+                                    <div class="brandBox">
+                                        <img src="../../dist/img/china.png" alt="">
+                                        <span>悦诗风吟</span>
+                                    </div>
+                                    <div class="info">
+                                        <span title="悦诗风吟绿茶精萃平衡柔肤露（保质2021.4.30）" class="product-info">悦诗风吟绿茶精萃平衡柔肤露（保质2021.4.30）</span>
+                                        <div class="price">
+                                            <div class="num">¥
+                                            29.00</div>
+                                            <span class="discount"><span>40%</span> <b>&#8595</b></span></div>
+                                        <div class="rate-box">
+                                            <div class="van-rate">
+                                                <svg fill="#bdbdbd" viewBox="0 0 32 32" class="van-rate__item" style="width: 20px;"><path d="M32 12.408l-11.056-1.607-4.944-10.018-4.944 10.018-11.056 1.607 8 7.798-1.889 11.011 9.889-5.199 9.889 5.199-1.889-11.011 8-7.798z"></path></svg>
+                                                <svg fill="#bdbdbd" viewBox="0 0 32 32" class="van-rate__item" style="width: 20px;"><path d="M32 12.408l-11.056-1.607-4.944-10.018-4.944 10.018-11.056 1.607 8 7.798-1.889 11.011 9.889-5.199 9.889 5.199-1.889-11.011 8-7.798z"></path></svg>
+                                                <svg fill="#bdbdbd" viewBox="0 0 32 32" class="van-rate__item" style="width: 20px;"><path d="M32 12.408l-11.056-1.607-4.944-10.018-4.944 10.018-11.056 1.607 8 7.798-1.889 11.011 9.889-5.199 9.889 5.199-1.889-11.011 8-7.798z"></path></svg>
+                                                <svg fill="#bdbdbd" viewBox="0 0 32 32" class="van-rate__item" style="width: 20px;"><path d="M32 12.408l-11.056-1.607-4.944-10.018-4.944 10.018-11.056 1.607 8 7.798-1.889 11.011 9.889-5.199 9.889 5.199-1.889-11.011 8-7.798z"></path></svg>
+                                                <svg fill="#bdbdbd" viewBox="0 0 32 32" class="van-rate__item" style="width: 20px;"><path d="M32 12.408l-11.056-1.607-4.944-10.018-4.944 10.018-11.056 1.607 8 7.798-1.889 11.011 9.889-5.199 9.889 5.199-1.889-11.011 8-7.798z"></path></svg>
+                                            </div>
+                                            <span class="review-num">9</span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="product-content">
+                                <a href="./details.html" class="lins-pro">
+                                    <img src="../../dist/img/huf1.jpeg" alt="">
+                                    <div class="brandBox">
+                                        <img src="../../dist/img/china.png" alt="">
+                                        <span>悦诗风吟</span>
+                                    </div>
+                                    <div class="info">
+                                        <span title="悦诗风吟绿茶精萃平衡柔肤露（保质2021.4.30）" class="product-info">悦诗风吟绿茶精萃平衡柔肤露（保质2021.4.30）</span>
+                                        <div class="price">
+                                            <div class="num">¥
+                                            29.00</div>
+                                            <span class="discount"><span>40%</span> <b>&#8595</b></span></div>
+                                        <div class="rate-box">
+                                            <div class="van-rate">
+                                                <svg fill="#bdbdbd" viewBox="0 0 32 32" class="van-rate__item" style="width: 20px;"><path d="M32 12.408l-11.056-1.607-4.944-10.018-4.944 10.018-11.056 1.607 8 7.798-1.889 11.011 9.889-5.199 9.889 5.199-1.889-11.011 8-7.798z"></path></svg>
+                                                <svg fill="#bdbdbd" viewBox="0 0 32 32" class="van-rate__item" style="width: 20px;"><path d="M32 12.408l-11.056-1.607-4.944-10.018-4.944 10.018-11.056 1.607 8 7.798-1.889 11.011 9.889-5.199 9.889 5.199-1.889-11.011 8-7.798z"></path></svg>
+                                                <svg fill="#bdbdbd" viewBox="0 0 32 32" class="van-rate__item" style="width: 20px;"><path d="M32 12.408l-11.056-1.607-4.944-10.018-4.944 10.018-11.056 1.607 8 7.798-1.889 11.011 9.889-5.199 9.889 5.199-1.889-11.011 8-7.798z"></path></svg>
+                                                <svg fill="#bdbdbd" viewBox="0 0 32 32" class="van-rate__item" style="width: 20px;"><path d="M32 12.408l-11.056-1.607-4.944-10.018-4.944 10.018-11.056 1.607 8 7.798-1.889 11.011 9.889-5.199 9.889 5.199-1.889-11.011 8-7.798z"></path></svg>
+                                                <svg fill="#bdbdbd" viewBox="0 0 32 32" class="van-rate__item" style="width: 20px;"><path d="M32 12.408l-11.056-1.607-4.944-10.018-4.944 10.018-11.056 1.607 8 7.798-1.889 11.011 9.889-5.199 9.889 5.199-1.889-11.011 8-7.798z"></path></svg>
+                                            </div>
+                                            <span class="review-num">9</span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="product-content">
+                                <a href="./details.html" class="lins-pro">
+                                    <img src="../../dist/img/huf1.jpeg" alt="">
+                                    <div class="brandBox">
+                                        <img src="../../dist/img/china.png" alt="">
+                                        <span>悦诗风吟</span>
+                                    </div>
+                                    <div class="info">
+                                        <span title="悦诗风吟绿茶精萃平衡柔肤露（保质2021.4.30）" class="product-info">悦诗风吟绿茶精萃平衡柔肤露（保质2021.4.30）</span>
+                                        <div class="price">
+                                            <div class="num">¥
+                                            29.00</div>
+                                            <span class="discount"><span>40%</span> <b>&#8595</b></span></div>
+                                        <div class="rate-box">
+                                            <div class="van-rate">
+                                                <svg fill="#bdbdbd" viewBox="0 0 32 32" class="van-rate__item" style="width: 20px;"><path d="M32 12.408l-11.056-1.607-4.944-10.018-4.944 10.018-11.056 1.607 8 7.798-1.889 11.011 9.889-5.199 9.889 5.199-1.889-11.011 8-7.798z"></path></svg>
+                                                <svg fill="#bdbdbd" viewBox="0 0 32 32" class="van-rate__item" style="width: 20px;"><path d="M32 12.408l-11.056-1.607-4.944-10.018-4.944 10.018-11.056 1.607 8 7.798-1.889 11.011 9.889-5.199 9.889 5.199-1.889-11.011 8-7.798z"></path></svg>
+                                                <svg fill="#bdbdbd" viewBox="0 0 32 32" class="van-rate__item" style="width: 20px;"><path d="M32 12.408l-11.056-1.607-4.944-10.018-4.944 10.018-11.056 1.607 8 7.798-1.889 11.011 9.889-5.199 9.889 5.199-1.889-11.011 8-7.798z"></path></svg>
+                                                <svg fill="#bdbdbd" viewBox="0 0 32 32" class="van-rate__item" style="width: 20px;"><path d="M32 12.408l-11.056-1.607-4.944-10.018-4.944 10.018-11.056 1.607 8 7.798-1.889 11.011 9.889-5.199 9.889 5.199-1.889-11.011 8-7.798z"></path></svg>
+                                                <svg fill="#bdbdbd" viewBox="0 0 32 32" class="van-rate__item" style="width: 20px;"><path d="M32 12.408l-11.056-1.607-4.944-10.018-4.944 10.018-11.056 1.607 8 7.798-1.889 11.011 9.889-5.199 9.889 5.199-1.889-11.011 8-7.798z"></path></svg>
+                                            </div>
+                                            <span class="review-num">9</span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div> -->
+
+
+
+
+                        </div>   
+                    </div>
+                </div>
+            </div>
+        </div>
+    <!-- footer -->
+        <div class="footer">
+            <div class="container">
+                <div class="footer-row">
+                    <ul class="list">
+                        <li>
+                            <div class="lins"></div>
+                            <div class="content">
+                                <h2>自营商品</h2> 
+                                <p>发现全球正品好货</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="lins"></div>
+                            <div class="content">
+                                <h2>自营商品</h2> 
+                                <p>发现全球正品好货</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="lins"></div>
+                            <div class="content">
+                                <h2>自营商品</h2> 
+                                <p>发现全球正品好货</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="lins"></div>
+                            <div class="content">
+                                <h2>自营商品</h2> 
+                                <p>发现全球正品好货</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <div class="col-1">
+                        <div class="box1">
+                            <div class="title">Gshopper App</div>
+                            <div class="download">
+                                <a href="#">下载 iOS 或安卓客户端</a>
+                            </div>
+                        </div>
+                        <div class="box2">
+                            <div class="foot-tit">合作品牌</div>
+                            <div class="foot-list">
+                                <a href="#"></a>
+                                <a href="#"></a>
+                                <a href="#"></a>
+                            </div>
+                            <div class="foot-us">关注我们</div>
+                            <div class="link-our">
+                                <a href="#"></a>
+                                <a href="#"><img src="../../dist/img/wechat-promote.png" alt=""></a>
+                                <a href="#"></a>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-2">
+                        <div class="help">
+                            <p>帮助中心</p>
+                            <ul>
+                                <li><a href="#">免责声明</a></li>
+                                <li><a href="#">退货与退款</a></li>
+                                <li><a href="#">消费者告知书</a></li>
+                                <li><a href="#">常见问题</a></li>
+                                <li><a href="#">隐私政策</a></li>
+                                <li><a href="#">法律条款</a></li>
+                                
+                            </ul>
+                        </div>
+                        <div class="about">
+                            <p>关于 Gshopper</p>
+                            <ul>
+                                <li><a href="#">联系我们</a></li>
+                                <li><a href="#">企业信息</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-pay">
+                    <div class="pay">
+                        <div class="pay-list">
+                            <ul>
+                                <li><a href="#"><img src="../../dist/img/link1.svg" alt=""></a></li>
+                                <li><a href="#"><img src="../../dist/img/link2.png" alt=""></a></li>
+                                <li><a href="#"><img src="../../dist/img/link3.png" alt=""></a></li>
+                                <li><a href="#"><img src="../../dist/img/link4.png" alt=""></a></li>
+                                <li><a href="#"><img src="../../dist/img/link5.png" alt=""></a></li>
+                                <li><a href="#"><img src="../../dist/img/link6.png" alt=""></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="company">
+                    <div class="foot-box">
+                        <p  class="company-name">
+                            <span  class="company-name-item">沪 ICP 备 B2-20130065</span> 
+                            <span  class="company-name-item">（沪）-经营性-2020-0041</span> 
+                            <a  target="_blank" href="#" class="beian company-name-item">
+                                <img  src="../img/gongan.png" alt="">
+                                沪公网安备 31011502008503 号 </a> 
+                            <a  target="_blank" href="#"  class="shanghai company-name-item">
+                                <img src="../img/buse1.png" alt=""></a>
+                                上海载和网络科技有限公司
+                        </p>
+                        <p>
+                            中国（上海）自由贸易试验区东方路1217、1217-1号6幢6楼F-3
+                        </p>
+                        <p data-v-6682cde2="">
+                            <span>Copyright © 2020 Gshopper. </span> 
+                            <span class="footer-mobile">All Rights Reserved. </span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

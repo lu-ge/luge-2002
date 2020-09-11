@@ -1,0 +1,44 @@
+[
+    {
+       "id" : "101",
+       "img" : "huf1,slider1.jpeg,slider2.jpeg,slider3.jpeg,slider4.jpeg",
+       "price" : "30.00" ,
+       "goodName" : "悦诗风吟绿茶精萃平衡柔肤露（保质2021.4.30）"
+    },
+    {
+      "id" : "102",
+        "img" : "huf2,gp1.jpeg,gp2.jpeg,gp3.jpeg,gp4.jpeg",
+        "price" : "29.00" ,
+        "goodName" : "悦诗风吟绿茶精萃平衡柔肤露"
+     },
+     {
+      "id" : "103",
+      "img" : "huf3,slider1.jpeg",
+      "price" : "300.00" ,
+      "goodName" : "悦诗风吟绿茶精萃平衡柔肤露（保质2021.4.30）"
+      },
+      {
+      "id" : "104",
+      "img" : "huf4,slider1.jpeg",
+      "price" : "329.00" ,
+      "goodName" : "悦诗风吟绿茶精萃平衡柔肤露"
+      },
+      {
+         "id" : "105",
+      "img" : "huf5,slider1.jpeg",
+      "price" : "350.00" ,
+      "goodName" : "悦诗风吟绿茶精萃平衡柔肤露（保质2021.4.30）"
+      },
+      {
+         "id" : "106",
+      "img" : "huf6,slider1.jpeg",
+      "price" : "290.00" ,
+      "goodName" : "悦诗风吟绿茶精萃平衡柔肤露（保质2021.4.30）"
+      },
+      {
+         "id" : "107",
+         "img" : "huf6,slider1.jpeg",
+         "price" : "290.00" ,
+         "goodName" : "悦诗风吟绿茶精萃平衡柔肤露（保质2021.4.30）"
+         }
+]
