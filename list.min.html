@@ -1,0 +1,686 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <!-- 正确显示来源于网络的图片 -->
+    <meta name="referrer" content="never">
+    <title>Document</title>
+    <link rel="stylesheet" href="../../dist/lib/iconfont/iconfont.css">
+    <link rel="stylesheet" href="../../dist/css/list.min.css">
+    <!-- <style>
+        /* css reset */
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        ul,
+        ol {
+            list-style: none;
+        }
+
+        a {
+            text-decoration: none;
+            color: #424242;
+        }
+
+        img {
+            display: block;
+        }
+
+        body {
+            font-family: Arial;
+            font-size: 14px;
+        }
+
+        h1,
+        h2,
+        h3 {
+            font-size: 14px;
+        }
+
+        /* css common */
+        .l {
+            float: left;
+        }
+
+        .r {
+            float: right;
+        }
+
+        .clear:after {
+            content: "";
+            display: block;
+            clear: both;
+        }
+
+        .container {
+            width: 1226px;
+            margin: 0 auto;
+            position: relative;
+        }
+
+        .container-fluid {
+            position: relative;
+        }
+
+        /* css header */
+        #header {
+            background: #333333;
+            height: 40px;
+            line-height: 40px;
+            color: #b0b0b0;
+        }
+
+        #header .header-nav {
+            font-size: 0;
+        }
+
+        #header .header-nav a {
+            font-size: 12px;
+            color: #b0b0b0;
+        }
+
+        #header .header-nav span {
+            font-size: 12px;
+            margin: 0 8px;
+        }
+
+        #header .header-che button{
+            width: 120px;
+            height: 40px;
+            color: black;
+            text-align: center;
+            background: #b0b0b0;
+            margin-left: 24px;
+        }
+
+        #header .header-subnav {
+            font-size: 0;
+        }
+
+        #header .header-subnav a {
+            font-size: 12px;
+            color: #b0b0b0;
+        }
+
+        #header .header-subnav span {
+            font-size: 12px;
+            margin: 0 8px;
+        }
+
+        /* css logo */
+        #logo {
+            height: 90px;
+            margin-top: 10px;
+        }
+
+        #logo .logo-pic {
+            width: 55px;
+            height: 55px;
+            margin-top: 12px;
+            margin-right: 189px;
+        }
+
+        #logo .logo-pic img {
+            width: 55px;
+            height: 55px;
+            position: absolute;
+        }
+
+        #logo .logo-pic a:nth-of-type(2) {
+            display: none;
+        }
+
+        #logo .logo-nav {
+            font-size: 0;
+            line-height: 90px;
+        }
+
+        #logo .logo-nav a {
+            font-size: 16px;
+            margin-right: 20px;
+        }
+
+        #logo .logo-search {
+            margin-top: 15px;
+            width: 294px;
+            height: 48px;
+            border: 1px #e0e0e0 solid;
+            display: flex;
+            position: relative;
+        }
+
+        #logo .logo-search input {
+            flex: 1;
+            border: none;
+            outline: none;
+            font-size: 18px;
+            text-indent: 5px;
+        }
+
+        #logo .logo-search .logo-search-btn {
+            width: 50px;
+            height: 48px;
+            text-align: center;
+            line-height: 48px;
+            border-left: 1px #e0e0e0 solid;
+        }
+
+        #logo .logo-search .logo-search-tip {
+            position: absolute;
+            left: 50px;
+            top: 15px;
+        }
+
+        #logo .logo-search-tip a {
+            background: #ccc;
+            padding: 3px 5px;
+        }
+
+        /* main css */
+        .main {
+            width: 1290px;
+            margin: 0 auto;
+        }
+
+        .main .list {
+            width: 1290px;
+            margin-right: 10px;
+            content: '';
+            display: block;
+            clear: both;
+        }
+
+        .main .list li {
+            float: left;
+            width: 300px;
+            border: 1px #ff5000 solid;
+            margin: 15px 10px 10px 10px;
+        }
+
+        .main .main-pic {
+            width: 100%;
+            margin-bottom: 8px;
+        }
+
+        .main .main-pic a img {
+            width: 300px;
+            height: 300px;
+        }
+
+        .main .main-content {
+            font-size: 14px;
+            line-height: 20px;
+        }
+
+        .main .main-content a:hover {
+            text-decoration: underline;
+            color: tomato;
+        }
+
+        .main .main-comment {
+            font-size: 12px;
+            line-height: 36px;
+            color: #999999;
+        }
+
+        .main .main-price {
+            height: 22px;
+            line-height: 22px;
+            color: #ff560a;
+            font-size: 12px;
+            margin-top: 7px;
+        }
+
+        .main .main-price .main-price-off {
+            font-size: 22px;
+        }
+
+        .main .main-price .main-price-on {
+            color: #999999;
+            text-decoration: line-through;
+        }
+
+        .main .main-detail {
+            width: 100%;
+            height: 50px;
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+
+        .main .main-detail .btn {
+            width: 100%;
+            height: 50px;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            text-align: center;
+        }
+
+        .main .btn-detail-1 {
+            width: 120px;
+            height: 40px;
+            line-height: 40px;
+            background: blue;
+            border-radius: 8%;
+            color: white;
+        }
+
+        .main .btn-detail-2 {
+            width: 120px;
+            height: 40px;
+            line-height: 40px;
+            background: #ff6700;
+            border-radius: 8%;
+            color: white;
+
+        }
+
+        .M-box11{
+            height: 30px;
+            color: white;
+            font-size: 20px;
+        }
+       
+        .M-box11 .active{
+            color: #ff6700;
+        }
+    </style> -->
+</head>
+
+<body>
+    <!-- <header id="header" class="container-fluid">
+        <div class="container clear">
+            <div class="logo-pic l">
+                <a href="#"><img src="./img/01.png" alt=""></a>
+                <a href="#"><img src="./img/02.png" alt=""></a>
+            </div>
+            <div class="logo-heart l">
+                <a href="#"><img src="../dist/img/heart.gif" alt=""></a>
+            </div>
+            <div class="header-nav l">
+                <a href="#">小米商城</a><span>|</span>
+                <a href="#">MIUI</a><span>|</span>
+                <a href="#">IoT</a><span>|</span>
+                <a href="#">云服务</a><span>|</span>
+                <a href="#">金融</a><span>|</span>
+                <a href="#">有品</a><span>|</span>
+                <a href="#">小爱开放平台</a><span>|</span>
+                <a href="#">企业团购</a><span>|</span>
+                <a href="#">资质证照</a><span>|</span>
+                <a href="#">协议规则</a><span>|</span>
+                <a href="#">下载APP</a><span>|</span>
+                <a href="#"> Select Location</a>
+            </div>
+            <div class="header-che r">
+                <i class="iconfont icongouwuchekong"></i><a href="./car.html"> <button name="myCar" style="opacity: 0.6;">购物车</button></a>
+            </div>
+            <div class="header-subnav r">
+                <a href="./login.html" name="login">登录</a><span>|</span>
+                <a href="./res.html">注册</a><span>|</span>
+                <a href="../index.html" name="back">退出登录</a>
+            </div>
+        </div>
+    </header>
+    <div id="logo" class="container clear">
+        <div class="logo-pic l">
+            <a href="#"><img src="./img/01.png" alt=""></a>
+            <a href="#"><img src="./img/02.png" alt=""></a>
+        </div>
+        <div class="logo-nav l">
+            <a href="#">小米手机</a>
+            <a href="#">Redmi 红米</a>
+            <a href="#">电视</a>
+            <a href="#">笔记本</a>
+            <a href="#">家电</a>
+            <a href="#">路由器</a>
+            <a href="#"> 智能硬件</a>
+            <a href="#"> 服务</a>
+            <a href="#"> 社区</a>
+        </div>
+        <div class="logo-search r">
+            <input type="text">
+            <div class="logo-search-btn"><i class="iconfont iconfangdajing"></i></div>
+            <div class="logo-search-tip">
+                <a href="#">小米9 Pro 5G</a>
+                <a href="#">redmi Note 8</a>
+            </div>
+        </div>
+    </div> -->
+    <header id="header" class="container-fluid">
+        <div class="container clear">
+            <ul class="header-nav l">
+                <li><a href="#">小米商城</a><span>|</span></li>
+                <li><a href="#">MIUI</a><span>|</span></li>
+                <li><a href="#">IoT</a><span>|</span></li>
+                <li><a href="#">云服务</a><span>|</span></li>
+                <li><a href="#">金融</a><span>|</span></li>
+                <li><a href="#">有品</a><span>|</span></li>
+                <li><a href="#">小爱开放平台</a><span>|</span></li>
+                <li><a href="#">企业团购</a><span>|</span></li>
+                <li><a href="#">资质证照</a><span>|</span></li>
+                <li><a href="#">协议规则</a><span>|</span></li>
+                <li id="loadApp"><a href="www.mi.com">下载APP
+                        <div class="nav-img">
+                            <img src="../../dist/img/download.png" alt="">
+                        </div>
+                    </a><span>|</span></li>
+                <li><a href="#"> Select Location</a></li>
+            </ul>
+            <div class="header-che r">
+                <i class="iconfont icongouwuche word"></i>
+                <a href="../dist/html/car.min.html" class="myCar" name="myCar">购物车(0)</a>
+            </div>
+            <ul class="header-subnav r">
+                <li>
+                    <a href="../dist/html/login.min.html" name="login">登录</a><span>|</span></li>
+                <li>
+                    <a href="../dist/html/res.min.html">注册</a><span>|</span>
+                </li>
+                <li><a href="./index.html" name="back">退出登录</a></li>
+            </ul>
+        </div>
+    </header>
+    <div id="logo" class="container clear">
+        <div class="logo-pic l">
+            <a href="#"><img src="../../dist/img/01.png" alt=""></a>
+            <a href="#"><img src="../../dist/img/02.png" alt=""></a>
+        </div>
+        <div class="logo-heart l">
+            <a href="#"><img src="../../dist/img/heart.gif" alt=""></a>
+        </div>
+        <ul class="logo-nav l">
+            <li><a href="#">小米手机</a></li>
+            <li><a href="#">Redmi 红米</a></li>
+            <li><a href="#">电视</a></li>
+            <li><a href="#">笔记本</a></li>
+            <li><a href="#">家电</a></li>
+            <li><a href="#">路由器</a></li>
+            <li><a href="#"> 智能硬件</a></li>
+            <li><a href="#"> 服务</a></li>
+            <li><a href="#"> 社区</a></li>
+        </ul>
+        <div class="logo-search r">
+            <input type="text">
+            <div class="logo-search-btn"><i class="iconfont iconfangdajing"></i></div>
+            <ul class="logo-search-tip">
+                <li><a href="#">小米9 Pro 5G</a></li>
+                <li><a href="#">redmi Note 8</a></li>
+            </ul>
+        </div>
+    </div>
+    <div id="title" class="container clear">
+        <div class="container" id="title">
+            <a href="../../dist/index.html">首页</a>><a href="#">全部结果</a>><a href="#">手机</a>
+        </div>
+    </div>
+
+    <div class="main">
+        <ul class="list">
+            <!-- <li>
+                <div class="main-pic">
+                    <a href="#">
+                        <img src="../img/a.jpg" alt="">
+                    </a>
+                </div>
+                <p class="main-content">
+                    <a href="#">商品详情商品详情商品详情商品详情商品详情商品详情商品详情</a>
+                </p>
+                <div class="main-comment">
+                    <span>评价788</span>
+                    <span>收藏1874</span>
+                </div>
+                <div class="main-price">
+                    ￥<span class="main-price-off">21.5</span> <span class="main-price-on">￥30</span>
+                </div>
+                <div class="main-detail">
+                    <p class="btn"><a href="#" class="btn-detail-1">查找相似商品</a> <a href="#"
+                            class="btn-detail-2">查看商品详情</a></p>
+                </div>
+            </li>
+            <li>
+                <div class="main-pic">
+                    <a href="#">
+                        <img src="../img/a.jpg" alt="">
+                    </a>
+                </div>
+                <p class="main-content">
+                    <a href="#">商品详情商品详情商品详情商品详情商品详情商品详情商品详情</a>
+                </p>
+                <div class="main-comment">
+                    <span>评价788</span>
+                    <span>收藏1874</span>
+                </div>
+                <div class="main-price">
+                    ￥<span class="main-price-off">21.5</span> <span class="main-price-on">￥30</span>
+                </div>
+                <div class="main-detail">
+                    <p class="btn"><a href="#" class="btn-detail-1">查找相似商品</a> <a href="#"
+                            class="btn-detail-2">查看商品详情</a></p>
+                </div>
+            </li>
+            <li>
+                <div class="main-pic">
+                    <a href="#">
+                        <img src="../img/a.jpg" alt="">
+                    </a>
+                </div>
+                <p class="main-content">
+                    <a href="#">商品详情商品详情商品详情商品详情商品详情商品详情商品详情</a>
+                </p>
+                <div class="main-comment">
+                    <span>评价788</span>
+                    <span>收藏1874</span>
+                </div>
+                <div class="main-price">
+                    ￥<span class="main-price-off">21.5</span> <span class="main-price-on">￥30</span>
+                </div>
+                <div class="main-detail">
+                    <p class="btn"><a href="#" class="btn-detail-1">查找相似商品</a> <a href="#"
+                            class="btn-detail-2">查看商品详情</a></p>
+                </div>
+            </li>
+            <li>
+                <div class="main-pic">
+                    <a href="#">
+                        <img src="../img/a.jpg" alt="">
+                    </a>
+                </div>
+                <p class="main-content">
+                    <a href="#">商品详情商品详情商品详情商品详情商品详情商品详情商品详情</a>
+                </p>
+                <div class="main-comment">
+                    <span>评价788</span>
+                    <span>收藏1874</span>
+                </div>
+                <div class="main-price">
+                    ￥<span class="main-price-off">21.5</span> <span class="main-price-on">￥30</span>
+                </div>
+                <div class="main-detail">
+                    <p class="btn"><a href="#" class="btn-detail-1">查找相似商品</a> <a href="#"
+                            class="btn-detail-2">查看商品详情</a></p>
+                </div>
+            </li>
+            <li>
+                <div class="main-pic">
+                    <a href="#">
+                        <img src="../img/a.jpg" alt="">
+                    </a>
+                </div>
+                <p class="main-content">
+                    <a href="#">商品详情商品详情商品详情商品详情商品详情商品详情商品详情</a>
+                </p>
+                <div class="main-comment">
+                    <span>评价788</span>
+                    <span>收藏1874</span>
+                </div>
+                <div class="main-price">
+                    ￥<span class="main-price-off">21.5</span> <span class="main-price-on">￥30</span>
+                </div>
+                <div class="main-detail">
+                    <p class="btn"><a href="#" class="btn-detail-1">查找相似商品</a> <a href="#"
+                            class="btn-detail-2">查看商品详情</a></p>
+                </div>
+            </li>
+            <li>
+                <div class="main-pic">
+                    <a href="#">
+                        <img src="../img/a.jpg" alt="">
+                    </a>
+                </div>
+                <p class="main-content">
+                    <a href="#">商品详情商品详情商品详情商品详情商品详情商品详情商品详情</a>
+                </p>
+                <div class="main-comment">
+                    <span>评价788</span>
+                    <span>收藏1874</span>
+                </div>
+                <div class="main-price">
+                    ￥<span class="main-price-off">21.5</span> <span class="main-price-on">￥30</span>
+                </div>
+                <div class="main-detail">
+                    <p class="btn"><a href="#" class="btn-detail-1">查找相似商品</a> <a href="#"
+                            class="btn-detail-2">查看商品详情</a></p>
+                </div>
+            </li>
+            <li>
+                <div class="main-pic">
+                    <a href="#">
+                        <img src="../img/a.jpg" alt="">
+                    </a>
+                </div>
+                <p class="main-content">
+                    <a href="#">商品详情商品详情商品详情商品详情商品详情商品详情商品详情</a>
+                </p>
+                <div class="main-comment">
+                    <span>评价788</span>
+                    <span>收藏1874</span>
+                </div>
+                <div class="main-price">
+                    ￥<span class="main-price-off">21.5</span> <span class="main-price-on">￥30</span>
+                </div>
+                <div class="main-detail">
+                    <p class="btn"><a href="#" class="btn-detail-1">查找相似商品</a> <a href="#"
+                            class="btn-detail-2">查看商品详情</a></p>
+                </div>
+            </li>
+            <li>
+                <div class="main-pic">
+                    <a href="#">
+                        <img src="../img/a.jpg" alt="">
+                    </a>
+                </div>
+                <p class="main-content">
+                    <a href="#">商品详情商品详情商品详情商品详情商品详情商品详情商品详情</a>
+                </p>
+                <div class="main-comment">
+                    <span>评价788</span>
+                    <span>收藏1874</span>
+                </div>
+                <div class="main-price">
+                    ￥<span class="main-price-off">21.5</span> <span class="main-price-on">￥30</span>
+                </div>
+                <div class="main-detail">
+                    <p class="btn"><a href="#" class="btn-detail-1">查找相似商品</a> <a href="#"
+                            class="btn-detail-2">查看商品详情</a></p>
+                </div>
+            </li>
+            <li>
+                <div class="main-pic">
+                    <a href="#">
+                        <img src="../img/a.jpg" alt="">
+                    </a>
+                </div>
+                <p class="main-content">
+                    <a href="#">商品详情商品详情商品详情商品详情商品详情商品详情商品详情</a>
+                </p>
+                <div class="main-comment">
+                    <span>评价788</span>
+                    <span>收藏1874</span>
+                </div>
+                <div class="main-price">
+                    ￥<span class="main-price-off">21.5</span> <span class="main-price-on">￥30</span>
+                </div>
+                <div class="main-detail">
+                    <p class="btn"><a href="#" class="btn-detail-1">查找相似商品</a> <a href="#"
+                            class="btn-detail-2">查看商品详情</a></p>
+                </div>
+            </li>
+            <li>
+                <div class="main-pic">
+                    <a href="#">
+                        <img src="../img/a.jpg" alt="">
+                    </a>
+                </div>
+                <p class="main-content">
+                    <a href="#">商品详情商品详情商品详情商品详情商品详情商品详情商品详情</a>
+                </p>
+                <div class="main-comment">
+                    <span>评价788</span>
+                    <span>收藏1874</span>
+                </div>
+                <div class="main-price">
+                    ￥<span class="main-price-off">21.5</span> <span class="main-price-on">￥30</span>
+                </div>
+                <div class="main-detail">
+                    <p class="btn"><a href="#" class="btn-detail-1">查找相似商品</a> <a href="#"
+                            class="btn-detail-2">查看商品详情</a></p>
+                </div>
+            </li> -->
+        </ul>
+    </div>
+    <div class="M-box11" class="container"></div>
+
+
+    <script src="../../dist/js/jquery-1.12.4.min.js"></script>
+    <script src="../../dist/js/jquery.cookie.min.js"></script>
+    <script>
+
+        $.get('../json/json.json', (data) => {
+            let str = '';
+            console.log(data);
+            // console.log((data.data)[0].shop_detail);
+            data.data.forEach(function(item){
+                // console.log(item)
+                console.log(item.good_id)
+                // console.log(item.shop_detail)
+                str += `
+                <li>
+                <div class="main-pic">
+                    <a href="#">
+                        <img src="${item.url}" alt="">
+                    </a>
+                </div>
+                <div class="main-center">
+                    <p class="main-content">
+                        <a href="#">${item.shop_detail}</a>
+                    </p>
+                    <div class="main-comment">
+                        <span>评价${item.review}</span>
+                        <span>收藏${item.point_heart}</span>
+                    </div>
+                    <div class="main-price">
+                        ￥<span class="main-price-off">${item.pre_price}</span> <span class="main-price-on">￥${item.old_price}</span>
+                    </div>
+                </div>
+                <div class="main-detail">
+                    <p class="btn"><a href="#" class="btn-detail-1">查找相似商品</a> <a href="./detail.html?good_id=${item.good_id}"
+                            class="btn-detail-2">查看商品详情</a></p>
+                </div>
+            </li>`;
+            })
+            
+            $('.list').html(str);
+        })
+
+
+
+
+
+    </script>
+</body>
+
+</html>
